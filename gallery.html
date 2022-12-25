@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/home.css">
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/gallery.css">
+
+    <style>
+        .image {
+            display: block;
+            margin: 0 auto;
+            width: 1100px;
+            height: 500px;
+            transition: 0.3s;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-hiking"></i> SRI LANKA </a>
+
+        <nav class="navbar">
+            <div id="nav-close" class="fas fa-times"></div>
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="#">Gallery</a>
+            <a href="contect.html">contact</a>
+            <a href="services.html">services</a>
+
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+
+            <div id="search-btn" class="fas fa-search"></div>
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- search form  -->
+
+    <div class="search-form">
+
+        <div id="close-search" class="fas fa-times"></div>
+
+        <form action="">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </div>
+
+    <br> <br> <br><br> <br>
+    <br> <br>
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+
+        <img src="" id="image" class="image">
+
+        <script>
+            let image = document.getElementById("image");
+            let images = ['images/gallary1.jpg', 'images/image3.jpg', 'images/imge5.jpg', 'images/img9.jpg', 'images/sri.jpg', 'images/img9.jpg', 'image7.jpg']
+            setInterval(function() {
+                let random = Math.floor(Math.random() * 7);
+                image.src = images[random];
+            }, 1200);
+        </script>
+
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/gallary1.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>GALL FORT</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/gallary2.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>SIGIRIYA</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/gallary3.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>NINE-ARCHES BRIDGE</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/gallary4.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>NUWARA ELIYA</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/gallary5.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>TEA GARDEN</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/gallary6.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p> SRI THALATHA MALIGAI</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/gallary7.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>GAL-VIHARAYA AND RUINS CITY</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/gallary8.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>EDISON BUNGALOW</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/gallary9.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>AMBULUWAWA MOUNTAIN HILL</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/gallary10.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>NILAVELI BEACH</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/gallary11.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>NALLUR KOVIL</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/gallary12.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>KITULGALA</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contect.html">contact</a>
+                <a href="#">services</a>
+            </div>
+
+
+            <div class="box">
+                <h3>contact info</h3>
+
+                <a href="#"> <i class="fas fa-phone"></i> +94-112-125-9685 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+
+            </div>
+
+        </div>
+        <div class="credit">© 2022 All Rights Reserved by Sri Lanka Tourism</span> | </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+
+
+
+
+
+    <script src="js/script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
